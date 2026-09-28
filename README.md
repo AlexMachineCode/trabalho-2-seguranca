@@ -9,8 +9,9 @@ O sistema implementa, do zero e utilizando apenas a biblioteca padrão do Python
 ## Integrantes do Grupo
 
 * **Alex Batista Resende** - Matrícula: `231025261`
-* **Nome do Integrante 2** - Matrícula: `XX/XXXXXXX`
-* **Nome do Integrante 3** - Matrícula: `XX/XXXXXXX`
+* **Marco Aurelio Gonçalves Fonseca** - Matrícula: `221021509`
+* **Thomas Jefferson** - Matrícula: `202033561`
+* **Luis Henrique Bessa de Melo** - Matrícula: `232009567`
 
 ---
 
