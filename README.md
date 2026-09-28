@@ -15,7 +15,6 @@ O sistema implementa, do zero e utilizando apenas a biblioteca padrão do Python
 
 ---
 
-## 🏛 Arquitetura Descentralizada e Explicação dos Arquivos
 
 Para manter o código limpo, coeso e fácil de auditar, o sistema foi dividido em módulos independentes onde cada arquivo possui uma responsabilidade criptográfica bem definida:
 
