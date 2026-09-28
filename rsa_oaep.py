@@ -42,6 +42,8 @@ def oaep_decrypt(ciphertext: bytes, private_key: dict, label: bytes = b"") -> by
         raise ValueError("Criptograma com tamanho incompatível.")
 
     c_int = int.from_bytes(ciphertext, byteorder="big")
+    if c_int >= n:
+        raise ValueError("Criptograma fora do intervalo do módulo RSA.")
     m_int = pow(c_int, d, n)
     em = m_int.to_bytes(k, byteorder="big")
 
