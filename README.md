@@ -1,4 +1,3 @@
-cat << 'EOF' > README.md
 # Sistema de Criptografia Assimétrica e Assinatura Digital RSA
 
 Projeto desenvolvido para a disciplina de **Segurança Computacional (CIC0201)** — Universidade de Brasília (UnB).
