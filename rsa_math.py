@@ -61,17 +61,21 @@ def generate_prime(bits: int) -> int:
 
 def generate_keypair(bits: int = 2048):
     """Gera par de chaves RSA pública e privada (módulo >= 2048 bits)."""
+    if bits < 2048:
+        raise ValueError("O módulo RSA deve ter pelo menos 2048 bits.")
     half_bits = bits // 2
     e = 65537
     while True:
         p = generate_prime(half_bits)
         q = generate_prime(half_bits)
         if p != q:
+            n = p * q
+            if n.bit_length() < 2048:
+                continue
             phi = (p - 1) * (q - 1)
             gcd, _, _ = extended_gcd(e, phi)
             if gcd == 1:
                 break
-    n = p * q
     d = mod_inverse(e, phi)
     public_key = {"n": n, "e": e}
     private_key = {"n": n, "e": e, "d": d, "p": p, "q": q}
